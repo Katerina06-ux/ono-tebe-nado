@@ -1,4 +1,3 @@
-/* ==================== ШАПКА ==================== */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -27,7 +26,7 @@
 }
 
 .header__logo-image {
-  width: 148px; 
+  width: 148px;
   height: auto;
 }
 
@@ -46,7 +45,6 @@
   text-decoration: none;
 }
 
-/* ==================== ОБЛОЖКА ==================== */
 .cover {
   position: relative;
   min-height: 757px;
@@ -60,7 +58,6 @@
   color: #fff;
 }
 
-/* Класс overlay используется и в обложке, и в карточках */
 .overlay {
   position: absolute;
   inset: 0;
@@ -68,7 +65,8 @@
   z-index: 1;
 }
 
-.cover__title, .cover__description {
+.cover__title,
+.cover__description {
   position: relative;
   z-index: 2;
 }
@@ -85,9 +83,17 @@
   display: block;
 }
 
-.aligned-text_left { text-align: left; }
-.aligned-text_center { text-align: center; }
-.aligned-text_right { text-align: right; }
+.aligned-text_left {
+  text-align: left;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
 
 .cover__description {
   display: flex;
@@ -112,7 +118,6 @@
   font-family: inherit;
 }
 
-/* ==================== ЛОТЫ ==================== */
 .lots {
   padding: 180px 50px;
 }
@@ -154,29 +159,37 @@
   color: #fff;
 }
 
-/* Стало: */
-.card_type_film { background-image: url('../images/card-lot-01.jpg'); }
-.card_type_book { background-image: url('../images/card-lot-02.jpg'); }
-.card_type_picture { background-image: url('../images/card-lot-03.jpg'); }
+.card_type_film {
+  background-image: url('../images/card-lot-01.jpg');
+}
 
-.card__title, .card__text {
+.card_type_book {
+  background-image: url('../images/card-lot-02.jpg');
+}
+
+.card_type_picture {
+  background-image: url('../images/card-lot-03.jpg');
+}
+
+.card__title,
+.card__text {
   position: relative;
   z-index: 2;
 }
 
 .card__title {
-  font-size: 20px; /* Уменьшили с 22px до 20px */
-  line-height: 1.1; /* Сделали строки чуть плотнее (было 1.2) */
+  font-size: 20px;
+  line-height: 1.1;
   text-transform: uppercase;
   text-decoration: underline;
-  text-underline-offset: 3px; /* Подчеркивание чуть ближе к буквам */
-  margin-bottom: 8px; /* Немного уменьшили отступ до текста */
+  text-underline-offset: 3px;
+  margin-bottom: 8px;
 }
 
 .card__text {
-  font-size: 16px; 
-  line-height: 1.3; 
-  color: rgba(255, 255, 255, 0.8); 
+  font-size: 16px;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.8);
   margin: 0;
 }
 
@@ -185,7 +198,6 @@
   color: #000;
 }
 
-/* ==================== ОБ АУКЦИОНЕ ==================== */
 .about {
   display: grid;
   grid-template-columns: 335px 1fr;
@@ -222,7 +234,6 @@
   line-height: 1.4;
 }
 
-/* ==================== ПОДВАЛ ==================== */
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -230,12 +241,10 @@
 }
 
 .footer__address {
-  justify-self: start; /* Прижимает блок влево */
+  justify-self: start;
   font-style: normal;
   font-size: 18px;
   line-height: 1.3;
-  
-  /* ДОБАВИТЬ ВОТ ЭТО: */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
